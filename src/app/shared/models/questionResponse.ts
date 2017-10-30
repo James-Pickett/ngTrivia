@@ -1,7 +1,7 @@
 import { Result } from './result';
 
 // represents a response from https://opentdb.com/ api
-export interface QuestionResponse {
+export class QuestionResponse {
     response_code: number;
     results: Result[];
 }

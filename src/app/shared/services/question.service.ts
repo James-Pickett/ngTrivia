@@ -16,6 +16,6 @@ export class QuestionService {
     }
 
     buildParams(): URLSearchParams {
-        return new URLSearchParams('amount=10&type=multiple');
+        return new URLSearchParams('amount=1&type=multiple&encode=url3986');
     }
 }

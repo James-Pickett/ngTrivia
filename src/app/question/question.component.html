@@ -1,1 +1,10 @@
-<h2>Question Component {{ questions[0].question }}</h2>
+<h2 align="center">{{ question?.question }}</h2>
+<h3 align="center">{{ question?.category }}</h3>
+<h3 align="center">{{ question?.difficulty }}</h3>
+<table align="center">
+  <tr>
+    <td *ngFor="let answer of question?.allAnswers" (click)="onSelect(answer)">
+      <button>{{ answer }}</button>
+    </td>
+  </tr>
+</table>
