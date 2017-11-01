@@ -12,7 +12,7 @@ export class QuestionService {
 
     get(): Observable<Result[]> {
         return this.apiService.get(environment.opentdbApiUrl, this.buildParams())
-        .map( ( data: { results: Result[] } ) => data.results );
+        .map( ( data ) => <Result[]>data.results);
     }
 
     buildParams(): URLSearchParams {

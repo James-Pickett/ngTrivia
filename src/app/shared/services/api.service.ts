@@ -32,5 +32,5 @@ export class ApiService {
             .map((res: Response) => {
                 return res.json();
             });
+        }
     }
-}
